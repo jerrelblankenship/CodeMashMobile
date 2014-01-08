@@ -9,6 +9,8 @@ using Android.OS;
 
 namespace CMM_Android
 {
+    using CMM.WebServiceLayer;
+
     [Activity(Label = "CMM_Android", MainLauncher = true, Icon = "@drawable/icon")]
     public class Activity1 : Activity
     {
@@ -25,7 +27,12 @@ namespace CMM_Android
             // and attach an event to it
             Button button = FindViewById<Button>(Resource.Id.MyButton);
 
-            button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+            button.Click += delegate
+            {
+                button.Text = string.Format("{0} clicks!", count++);
+                var restProcessor = new RestProcessor();
+                restProcessor.GetCountry();
+            };
         }
     }
 }
