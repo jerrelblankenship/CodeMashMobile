@@ -40,7 +40,7 @@ using Sqlite3DatabaseHandle = System.IntPtr;
 using Sqlite3Statement = System.IntPtr;
 #endif
 
-namespace Tasky.DL.SQLite
+namespace CMM.DL
 {
     public class SQLiteException : System.Exception
     {
