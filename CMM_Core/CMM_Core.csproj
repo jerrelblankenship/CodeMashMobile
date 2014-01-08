@@ -39,12 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DomainLayer\Country.cs" />
+    <Compile Include="DomainLayer\CMMDomainBase.cs" />
+    <Compile Include="DomainLayer\Location.cs" />
     <Compile Include="DataLayer\CMMDatabase.cs" />
     <Compile Include="DataLayer\SqlLiteDB.cs" />
+    <Compile Include="DomainLayer\Translation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BusinessLayer\" />
     <Folder Include="DataAccessLayer\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

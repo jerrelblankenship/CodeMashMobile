@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMM_Android", "CMM_Android\CMM_Android.csproj", "{D3EA2A69-E568-47A9-8EE9-55A65173E6D4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMM_iOS", "CMM_iOS\CMM_iOS.csproj", "{2EAF4B12-12C8-48E9-977E-E4820133B99D}"
@@ -104,7 +106,6 @@ Global
 		{2EAF4B12-12C8-48E9-977E-E4820133B99D}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
 		{2EAF4B12-12C8-48E9-977E-E4820133B99D}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
 		{2EAF4B12-12C8-48E9-977E-E4820133B99D}.Debug|Mixed Platforms.ActiveCfg = Debug|iPhone
-		{2EAF4B12-12C8-48E9-977E-E4820133B99D}.Debug|Mixed Platforms.Build.0 = Debug|iPhone
 		{2EAF4B12-12C8-48E9-977E-E4820133B99D}.Debug|x86.ActiveCfg = Debug|iPhone
 		{2EAF4B12-12C8-48E9-977E-E4820133B99D}.Release|Any CPU.ActiveCfg = Release|iPhone
 		{2EAF4B12-12C8-48E9-977E-E4820133B99D}.Release|ARM.ActiveCfg = Release|iPhone

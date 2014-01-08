@@ -40,7 +40,7 @@ using Sqlite3DatabaseHandle = System.IntPtr;
 using Sqlite3Statement = System.IntPtr;
 #endif
 
-namespace CMM.DL
+namespace CMM.DataLayer
 {
     public class SQLiteException : System.Exception
     {

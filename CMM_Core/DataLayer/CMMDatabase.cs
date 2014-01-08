@@ -1,7 +1,8 @@
-﻿namespace CMM.Core.DataLayer
+﻿namespace CMM.DataLayer
 {
     using System.Linq;
-    using DL;
+    using DomainLayer;
+
 
     public class CMMDatabase : SQLiteConnection
     {
@@ -9,7 +10,7 @@
         {
             CreateTable<Country>();
             CreateTable<Location>();
-            CreateTable<Translation>();
+            CreateTable<NameTranslation>();
         }
 
         public T GetItem<T>(int id) where T : CMMDomainBase, new()
