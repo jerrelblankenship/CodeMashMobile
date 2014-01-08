@@ -11,6 +11,8 @@ using CMM_WP.Resources;
 
 namespace CMM_WP
 {
+    using CMM.WebServiceLayer;
+
     public partial class MainPage : PhoneApplicationPage
     {
         // Constructor
@@ -20,6 +22,9 @@ namespace CMM_WP
 
             // Sample code to localize the ApplicationBar
             //BuildLocalizedApplicationBar();
+
+            var restProcessor = new RestProcessor();
+            restProcessor.GetCountry();
         }
 
         // Sample code for building a localized ApplicationBar

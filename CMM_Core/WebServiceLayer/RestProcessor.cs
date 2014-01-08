@@ -13,8 +13,10 @@
 
             var request = new RestRequest("rest/capital/london", Method.GET);
 
-            IRestResponse response = client.Execute(request);
-            var content = response.Content;
+            client.ExecuteAsync(request, response =>
+            {
+                var content = response.Content;
+            });
         }
     }
 }

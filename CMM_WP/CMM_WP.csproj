@@ -90,6 +90,30 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\CMM_Core\DataAccessLayer\DataRepository.cs">
+      <Link>DataAccessLayer\DataRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\CMM_Core\DataLayer\CMMDatabase.cs">
+      <Link>DataLayer\CMMDatabase.cs</Link>
+    </Compile>
+    <Compile Include="..\CMM_Core\DataLayer\SqlLiteDB.cs">
+      <Link>DataLayer\SqlLiteDB.cs</Link>
+    </Compile>
+    <Compile Include="..\CMM_Core\DomainLayer\CMMDomainBase.cs">
+      <Link>DomainLayer\CMMDomainBase.cs</Link>
+    </Compile>
+    <Compile Include="..\CMM_Core\DomainLayer\Country.cs">
+      <Link>DomainLayer\Country.cs</Link>
+    </Compile>
+    <Compile Include="..\CMM_Core\DomainLayer\Location.cs">
+      <Link>DomainLayer\Location.cs</Link>
+    </Compile>
+    <Compile Include="..\CMM_Core\DomainLayer\Translation.cs">
+      <Link>DomainLayer\Translation.cs</Link>
+    </Compile>
+    <Compile Include="..\CMM_Core\WebServiceLayer\RestProcessor.cs">
+      <Link>WebServiceLayer\RestProcessor.cs</Link>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -115,6 +139,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Properties\AppManifest.xml" />
     <None Include="Properties\WMAppManifest.xml">
       <SubType>Designer</SubType>
@@ -146,6 +171,14 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Community.CsharpSqlite.WP7">
+      <HintPath>..\lib\Community.CsharpSqlite\Community.CsharpSqlite.WP7.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp.WindowsPhone">
+      <HintPath>..\packages\RestSharp.104.4.0\lib\sl4-wp71\RestSharp.WindowsPhone.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
