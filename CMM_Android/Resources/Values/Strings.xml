@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="Hello">Hello World, Click Me!</string>
+    <string name="Hello">Retrieve Data from REST</string>
+  <string name="Retrieve">Load Data from DB</string>
     <string name="ApplicationName">CMM_Android</string>
 </resources>
