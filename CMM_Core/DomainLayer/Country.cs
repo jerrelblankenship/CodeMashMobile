@@ -14,8 +14,8 @@
         public string Alpha2Code { get; set; }
         public string Alpha3Code { get; set; }
         public string TopLevelDomain { get; set; }
-        public Location Location { get; set; }
+        public List<double> latlng { get; set; }
 
-        public IList<NameTranslation> Translations { get; set; }
+        //public IList<NameTranslation> Translations { get; set; }
     }
 }
