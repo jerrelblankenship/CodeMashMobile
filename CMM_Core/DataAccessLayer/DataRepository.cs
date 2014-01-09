@@ -26,6 +26,11 @@
             return db.GetByCapital(capital);
         }
 
+        public int SaveCountry(Country country)
+        {
+            return db.SaveItem(country);
+        }
+
         private string GetFilePath()
         {
             const string dbName = "cmmDatabase.db3";

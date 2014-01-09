@@ -2,6 +2,7 @@
 {
     using System.Collections.Generic;
     using System.IO;
+    using DataAccessLayer;
     using DomainLayer;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Linq;
@@ -32,6 +33,12 @@
                 };
 
                 var result = (List<Country>) serializer.Deserialize(streamReader, typeof (List<Country>));
+
+                if (result != null && result.Count > 0)
+                {
+                    var repo = new DataRepository();
+                    var id = repo.SaveCountry(result[0]);
+                }
 
                 int i = 9;
             });
