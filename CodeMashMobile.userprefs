@@ -1,9 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CMM_Android\Activity1.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|Mixed Platforms" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CMM_Core/DomainLayer/Country.cs">
     <Files>
-      <File FileName="CMM_Android\Resources\AboutResources.txt" Line="1" Column="1" />
-      <File FileName="CMM_Android\Activity1.cs" Line="1" Column="1" />
+      <File FileName="CMM_iOS/MyViewController.cs" Line="1" Column="1" />
+      <File FileName="CMM_Android/Activity1.cs" Line="1" Column="1" />
+      <File FileName="CMM_Core/packages.config" Line="1" Column="1" />
+      <File FileName="CMM_Core/DataAccessLayer/DataRepository.cs" Line="1" Column="1" />
+      <File FileName="CMM_Core/DomainLayer/CMMDomainBase.cs" Line="1" Column="1" />
+      <File FileName="CMM_Core/DomainLayer/Country.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
